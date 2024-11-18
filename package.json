@@ -7,13 +7,14 @@
 	"exports": {
 		".": "./dist/index.js"
 	},
-	"keywords": ["astro", "astro-loader", "github"],
+	"keywords": ["astro", "withastro", "astro-loader", "github"],
 	"author": "Connor Bär <github@connorbaer.com>",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/connor-baer/astro-loader-github-repos.git"
 	},
+	"homepage": "https://github.com/connor-baer/astro-loader-github-repos#readme",
 	"files": [
 		"dist",
 		"README.md",
