@@ -11,7 +11,13 @@
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "tab",
+		"ignore": [
+			".changeset/**",
+			"**/package.json",
+			"**/package-lock.json",
+			"**/tsconfig.json"
+		]
 	},
 	"organizeImports": {
 		"enabled": true
