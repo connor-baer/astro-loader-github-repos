@@ -56,7 +56,7 @@ const repos = await getCollection("repos");
   {
     repos.map(async (repo) => (
       <div>
-        <a href={repo.data.url}>{repo.data.name}</a>
+        <a href={repo.data.html_url}>{repo.data.full_name}</a>
         <span>{repo.data.stargazers_count} stars</span>
       </div>
     ))
