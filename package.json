@@ -1,13 +1,18 @@
 {
 	"name": "astro-loader-github-repos",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Load GitHub repository data into the Astro content layer",
 	"type": "module",
 	"main": "dist/index.js",
 	"exports": {
 		".": "./dist/index.js"
 	},
-	"keywords": ["astro", "withastro", "astro-loader", "github"],
+	"keywords": [
+		"astro",
+		"withastro",
+		"astro-loader",
+		"github"
+	],
 	"author": "Connor Bär <github@connorbaer.com>",
 	"license": "MIT",
 	"repository": {
