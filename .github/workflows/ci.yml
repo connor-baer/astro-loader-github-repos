@@ -23,9 +23,9 @@ jobs:
 
       - name: Create release PR or publish to npm
         if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/next' || github.ref == 'refs/heads/canary')
-        uses: changesets/action@master
+        uses: changesets/action@v1
         with:
           publish: npm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
