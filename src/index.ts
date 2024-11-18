@@ -10,16 +10,18 @@ type GitHubReposLoaderOptions = {
 	 * A GitHub access token such as a personal access token or a GitHub App user
 	 * access token, with at least the "Metadata" repository permissions (read).
 	 * Optional if only public repositories are requested.
+	 * See the [GitHub API Authentication docs](https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28) for more details.
 	 */
 	auth?: string;
 	/**
-	 * The organization name. The name is not case sensitive.
+	 * The organization name for which to fetch the repositories.
+	 * The name is not case sensitive.
 	 */
 	org: string;
 	/**
-	 * Specifies the types of repositories you want returned.
+	 * The types of repositories to fetch.
 	 *
-	 * @default "all"
+	 * @default "public"
 	 */
 	type?: "all" | "public" | "private" | "forks" | "sources" | "member";
 };
@@ -27,7 +29,7 @@ type GitHubReposLoaderOptions = {
 export function githubReposLoader({
 	auth,
 	org,
-	type,
+	type = "public",
 }: GitHubReposLoaderOptions): Loader {
 	const octokit = new Octokit({ auth });
 
