@@ -1,0 +1,49 @@
+{
+  "name": "astro-loader-github-repos",
+  "version": "1.0.0",
+  "description": "Load GitHub repository data into the Astro content layer",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "keywords": [
+    "astro",
+    "astro-loader",
+    "github"
+  ],
+  "author": "Connor Bär <github@connorbaer.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connor-baer/astro-loader-github-repos.git"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "lint": "biome check --write",
+    "lint:ci": "biome ci",
+    "prerelease": "npm run build",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.9",
+    "astro": "5.0.0-beta.6",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "astro": "^4.14.0 || ^5.0.0-beta.0"
+  }
+}
