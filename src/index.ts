@@ -1,7 +1,7 @@
 import type { Loader } from "astro/loaders";
 import { Octokit } from "octokit";
 
-import { RepoSchema, type Repo } from "./schema.js";
+import { type Repo, RepoSchema } from "./schema.js";
 
 export type { Repo };
 
