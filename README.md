@@ -2,7 +2,7 @@
 
 This package enables you to load the data of the repositories in a GitHub org, and use the data in your Astro site.
 
-Currently it provides `githubReposLoader`, which loads the repositories of a single org. By default it will load all repositories, but you can filter the types of repos loaded.
+Currently it provides `githubReposLoader`, which loads the repositories of a single org. By default it will load all public repositories, but you can filter the types of repos loaded.
 
 ## Installation
 
