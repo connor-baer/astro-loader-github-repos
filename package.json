@@ -1,6 +1,6 @@
 {
 	"name": "astro-loader-github-repos",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "Load GitHub repository data into the Astro content layer",
 	"type": "module",
 	"main": "dist/index.js",
