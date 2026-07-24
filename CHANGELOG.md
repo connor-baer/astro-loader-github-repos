@@ -1,5 +1,11 @@
 # astro-loader-github-repos
 
+## 1.2.0
+
+### Minor Changes
+
+- [`43ab2ef`](https://github.com/connor-baer/astro-loader-github-repos/commit/43ab2efaabed0d392635fb10e524d5b7e515dc85) Thanks [@connor-baer](https://github.com/connor-baer)! - Declared support for Astro v7 in the peer dependency range.
+
 ## 1.1.0
 
 ### Minor Changes
